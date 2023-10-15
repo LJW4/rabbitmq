@@ -1,0 +1,18 @@
+server:
+  port: 8080
+
+spring:
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: admin
+    password: admin
+
+logging:
+  level:
+    root: info
+
+rabbitmq:
+  queue-name: sample.queue
+  exchange-name: sample.exchange
+  routing-key: sample.key
